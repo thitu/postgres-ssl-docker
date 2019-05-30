@@ -14,7 +14,7 @@ Run it...
 
 ```bash
 docker run -d \
-  --name <give-container-a-name> \
+  --name <container-name> \
   --publish 5432:5432 \
   postgres_ssl:latest \
   -c ssl=on \
