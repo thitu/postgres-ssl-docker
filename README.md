@@ -1,4 +1,4 @@
-# postgres-ssl
+# postgres-ssl-docker
 
 Docker container for latest PostgreSQL with (self-signed) SSL enabled.
 
