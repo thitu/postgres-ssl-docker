@@ -4,7 +4,7 @@ Docker container for latest PostgreSQL with (self-signed) SSL enabled.
 
 ## Usage
 
-Build the container...
+Build it...
 
 ```bash
 docker build .
