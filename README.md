@@ -7,14 +7,15 @@ Docker container for latest PostgreSQL with (self-signed) SSL enabled.
 Build it...
 
 ```bash
-docker build .
+docker build . -t postgres_ssl
 ```
 
 Run it...
 
 ```bash
 docker run -d \
-  --name <container-name> \
+  -e POSTGRES_HOST_AUTH_METHOD=trust \
+  --name postgres \
   --publish 5432:5432 \
   postgres_ssl:latest \
   -c ssl=on \
